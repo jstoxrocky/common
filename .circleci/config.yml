@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/common
     docker:
-      - image: circleci/python:3.6.8-node-browsers
+      - image: circleci/python:3.7.6-node-browsers
     steps:
       - checkout
       - run:
