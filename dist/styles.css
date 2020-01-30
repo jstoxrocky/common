@@ -1,0 +1,84 @@
+body {
+  color: #33302e;
+  background-color: #fff1e5;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr 1fr 6fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.title {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.controls {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+
+  font: 20px MetricWeb sans-serif;
+}
+
+.content {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-auto-flow: dense;
+
+  background-color: #f2dfce;
+  font: 16px MetricWeb sans-serif;
+  color: #66605c;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  padding: 10px;
+}
+
+.title h1 {
+  font: 48px FinancierDisplayWeb, serif;
+}
+
+.content404 {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  background-color: #f2dfce;
+  font: 16px MetricWeb sans-serif;
+  color: #66605c;
+
+  padding: 10px;
+}
+
+.content404 h1 {
+  margin: 0px;
+  font: 120px FinancierDisplayWeb, serif;
+}
+
+.content404 a {
+  font: 16px MetricWeb sans-serif;
+  color: #66605c;
+}
