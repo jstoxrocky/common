@@ -24,8 +24,19 @@ export interface SearchAction {
   payload: SearchPayload;
 }
 
+export type Action = (
+  SearchAction |
+  SetCurrentSelectionAction
+)
+
+export interface SetCurrentSelectionAction {
+  type: string;
+  result: Result;
+}
+
 export interface ResultsState {
   results: Results;
+  selection: Result;
 }
 
 export interface Params {
@@ -34,10 +45,12 @@ export interface Params {
 
 export interface AppState {
   results: Results;
+  selection: Result;
 }
 
 export interface Actions {
   loadSearchResults: Function;
+  setCurrentSelection: Function;
 }
 
 export interface Context {
