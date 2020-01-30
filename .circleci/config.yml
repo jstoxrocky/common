@@ -24,3 +24,15 @@ jobs:
           command: |
             source ../venv/bin/activate
             flake8 common/
+      - run:
+          name: "Install Typescript and dependencies"
+          command: |
+            yarn install
+      - run:
+          name: "Compile Typescript"
+          command: |
+            yarn compile
+      - run:
+          name: "Lint Typescript"
+          command: |
+            yarn lint
