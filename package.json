@@ -46,7 +46,7 @@
     "@types/lodash.debounce": "^4.0.6",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "core-js": "2",
     "lodash.debounce": "^4.0.8",
